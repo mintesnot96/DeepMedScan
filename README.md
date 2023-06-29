@@ -64,5 +64,5 @@ Check out https://deepmedscan-by-mintesnot-ermias-migbar.onrender.com/
 License
 This project is licensed under the MIT License.
 
-Acknowledgments
-The CNN models utilized in this project underwent training using publicly available medical image datasets. We extend our heartfelt appreciation to the contributors and organizations responsible for curating and facilitating access to these datasets. Furthermore, we would like to express our gratitude to the open-source community for their invaluable contributions to the fields of deep learning and computer vision. And, we are deeply grateful to our teacher for providing us with this project opportunity.
+### Acknowledgments
+The CNN models utilized in this project underwent training using publicly available medical image datasets. We want to say a big thank you to the people and organizations that collected and shared the medical image datasets we used in this project. We are also grateful to the open-source community for their valuable contributions to deep learning and computer vision. Lastly, we would like to express our appreciation to our teacher for giving us the chance to work on this project.
