@@ -11,10 +11,10 @@ from tensorflow.keras.applications.vgg16 import preprocess_input
 
 
 # Load pre-trained models
-pneumonia_model = load_model('models/modelpneumonia.h5')
-covid_model = load_model('models/modelcovid19.h5')
-alzheimer_model = load_model('models/modelalzheimer.h5')
-braintumor_model = load_model('models/modelbraintumor.h5')
+# pneumonia_model = load_model('models/modelpneumonia.h5')
+# covid_model = load_model('models/modelcovid19.h5')
+# alzheimer_model = load_model('models/modelalzheimer.h5')
+# braintumor_model = load_model('models/modelbraintumor.h5')
 
 UPLOAD_FOLDER = 'static/uploads'
 ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg'])
@@ -111,6 +111,8 @@ def resultc():
             img = cv2.resize(img, (224, 224))
             img = img.reshape(1, 224, 224, 3)
             img = img / 255.0
+
+            covid_model = load_model('models/modelcovid19.h5')
             pred = covid_model.predict(img)
             if pred < 0.5:
                 pred = 0
@@ -135,6 +137,7 @@ def resultbt():
             img = crop_imgs([img])
             img = img.reshape(img.shape[1:])
             img = preprocess_imgs([img], (224, 224))
+            braintumor_model = load_model('models/modelbraintumor.h5')
             pred = braintumor_model.predict(img)
             if pred < 0.5:
                 pred = 0
@@ -159,6 +162,7 @@ def resulta():
             img = cv2.resize(img, (176, 176))
             img = img.reshape(1, 176, 176, 3)
             img = img / 255.0
+            alzheimer_model = load_model('models/modelalzheimer.h5')
             pred = alzheimer_model.predict(img)
             if pred[0][0] < 0.5:
                 pred = 0
@@ -183,6 +187,7 @@ def resultp():
             img = cv2.resize(img, (150, 150))
             img = img.reshape(1, 150, 150, 3)
             img = img / 255.0
+            pneumonia_model = load_model('models/modelpneumonia.h5')
             pred = pneumonia_model.predict(img)
             if pred < 0.5:
                 pred = 0
