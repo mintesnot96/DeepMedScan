@@ -65,5 +65,4 @@ License
 This project is licensed under the MIT License.
 
 Acknowledgments
-The CNN models used in this project were trained on publicly available medical image datasets. Special thanks to the contributors and organizations who curated and made those datasets accessible.
-We would also like to express our gratitude to the open-source community for their valuable contributions in the field of deep learning and computer vision.
+The CNN models utilized in this project underwent training using publicly available medical image datasets. We extend our heartfelt appreciation to the contributors and organizations responsible for curating and facilitating access to these datasets. Furthermore, we would like to express our gratitude to the open-source community for their invaluable contributions to the fields of deep learning and computer vision. And, we are deeply grateful to our teacher for providing us with this project opportunity.
