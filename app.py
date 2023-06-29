@@ -1,30 +1,14 @@
 import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
-from flask import Flask, flash, request, redirect, url_for, render_template
-import urllib.request
+from flask import Flask, flash, request, redirect, render_template
 import os
 from werkzeug.utils import secure_filename
 import cv2
-import pickle
 import imutils
-import sklearn
 from tensorflow.keras.models import load_model
-import joblib
 import numpy as np
 from tensorflow.keras.applications.vgg16 import preprocess_input
 
-
-def upload_blob(bucket_name, source_file_name, destination_blob_name):
-    """
-    Uploads a file to the specified bucket.
-    """
-    storage_client = gcp_storage.Client()
-    bucket = storage_client.bucket(bucket_name)
-    blob = bucket.blob(destination_blob_name)
-
-    blob.upload_from_filename(source_file_name)
-
-    print("File {} uploaded to {}.".format(source_file_name, destination_blob_name))
 
 # Load pre-trained models
 pneumonia_model = load_model('models/modelpneumonia.h5')
