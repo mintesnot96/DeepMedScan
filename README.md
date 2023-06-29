@@ -54,7 +54,8 @@ Contributions to DeepMedScan are welcome! If you find any issues or have suggest
  
 
 # Screenshots
-<img width="960" alt="image" src="https://github.com/mintesnot96/DeepMedScan/assets/96992238/158ef1cc-859f-4fd0-ba89-ba9d83f3fe17">
+<img width="960" alt="image" src="https://github.com/mintesnot96/DeepMedScan/assets/96992238/2b4a92f0-7fd1-4774-bcac-459f259f3005">
+
 
 
 Check out https://deepmedscan-by-mintesnot-ermias-migbar.onrender.com/
