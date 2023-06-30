@@ -92,12 +92,29 @@
         height: 20vh;
         top: auto;
       }
+      footer{
+        margin-top: 10rem;
+        width: 100%;
+      }
+      .hidden_span{
+        display: none;
+      }
       m-0 {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         height: 80vh;
+      }
+       @media only screen and (max-width:600px) {
+        .visible_span{
+         display: none;
+        }
+        .hidden_span{
+          display: block;
+          text-align: center;
+          font-size: smaller;
+        }
       }
     </style>
 
@@ -114,9 +131,8 @@
               src="https://addisfortune.net/wp-content/uploads/2013/01/Addis_Ababa_University_logo.png"
               alt="Logo"
             />
-            <span
-              >DeepMedScan: Medical Image Analysis and Disease Detection</span
-            >
+           <span class="visible_span">DeepMedScan: Medical Image Analysis and Disease Detection</span>
+            <span class="hidden_span">DeepMedScan: Medical Image Analysis<br/> and Disease Detection</span>
           </a>
           <button
             class="navbar-toggler"
