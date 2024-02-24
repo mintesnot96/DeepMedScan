@@ -1,6 +1,6 @@
 # DeepMedScan: Enhancing Medical Image Prediction with CNN and Computer Vision
 
-DeepMedScan is an advanced deep learning project developed by ***Mintesnot, Migbar, and Ermias*** as part of their Deep Learning class at ***Addis Ababa University, Addis Ababa Institute of Technology***. The project leverages Convolutional Neural Networks (CNN) and Computer Vision techniques for accurate medical image prediction. The focus of the project is on analyzing X-ray and MRI scan images to provide predictions and diagnoses for various medical conditions.
+DeepMedScan is an advanced deep learning project developed as part of their Deep Learning class at ***Addis Ababa University, Addis Ababa Institute of Technology***. The project leverages Convolutional Neural Networks (CNN) and Computer Vision techniques for accurate medical image prediction. The focus of the project is on analyzing X-ray and MRI scan images to provide predictions and diagnoses for various medical conditions.
 
 ## Features
 
